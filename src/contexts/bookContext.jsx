@@ -7,7 +7,7 @@ const BookContextProvider = ({ children }) => {
     { id: 2, title: "the final empire", author: "brandon sanderson" },
   ]);
 
-  const addBooks = (title, author) => {
+  const addBook = (title, author) => {
     setBooks([
       ...books,
       { id: Math.floor(Math.random() * 100000000), title, author },
@@ -19,7 +19,7 @@ const BookContextProvider = ({ children }) => {
   };
 
   return (
-    <BookContext.Provider value={{ books, addBooks, removeBook }}>
+    <BookContext.Provider value={{ books, addBook, removeBook }}>
       {children}
     </BookContext.Provider>
   );
