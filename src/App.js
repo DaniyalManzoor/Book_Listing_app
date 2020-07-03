@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <BookContextProvider>
         <Navbar />
+        <BookList />
       </BookContextProvider>
     </div>
   );
